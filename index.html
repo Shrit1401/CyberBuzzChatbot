@@ -17,9 +17,22 @@
             <div class="img">
                 <img src="images/triniti.png" alt="">
             </div>
-            <div class="title">Trinti</div>
+            <div class="title" style="
+            font-weight: 600;
+        ">Trinti</div>
             <div class="kebab">
-                <i class="fas fa-ellipsis-v"></i>
+                <div class="kebab">
+                    <figure></figure>
+                    <figure class="middle"></figure>
+                    <p class="cross">x</p>
+                    <figure></figure>
+                    <ul class="dropdown">
+                        <li><a href="http://www.g.com">About</a></li>
+                        <li><a href="http://www.g.com">Competetion</a></li>
+                        <!-- <li><a href="http://www.g.com">Design</a></li> -->
+                        <!-- <li><a href="http://www.g.com">Web Development</a></li> -->
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="form">
@@ -31,6 +44,7 @@
                     <p>Hello there, how can I help you?</p>
                 </div>
             </div>
+
         </div>
         <div class="typing-field">
             <div class="input-data">
@@ -39,6 +53,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var kebab = document.querySelector('.kebab'),
+            middle = document.querySelector('.middle'),
+            cross = document.querySelector('.cross'),
+            dropdown = document.querySelector('.dropdown');
+
+        kebab.addEventListener('click', function () {
+            middle.classList.toggle('active');
+            cross.classList.toggle('active');
+            dropdown.classList.toggle('active');
+        })
+    </script>
 
 </body>
 

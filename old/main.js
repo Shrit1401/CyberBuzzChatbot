@@ -7,7 +7,7 @@ $(document).ready(function () {
         if (event.key === "Enter") {
             event.preventDefault();
             $(".btn").click();
-        }   
+        }
     });
 });
 
