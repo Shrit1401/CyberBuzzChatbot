@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "sdg_chatbot", "chatbot") or die("Database Error");
+$conn = mysqli_connect("localhost", "root", "", "sdg_chatbot") or die("Database Error");
 
 $getMesg = mysqli_real_escape_string($conn, $_POST['text']);
 

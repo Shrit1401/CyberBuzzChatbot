@@ -23,7 +23,7 @@ function buttonClicked() {
         type: 'POST',
         data: 'text=' + $value,
         success: function (result) {
-            $replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>' + result + '</p></div></div>';
+            $replay = '<div class="bot-inbox inbox"> <div class="icon"> <img src="images/triniti.png" alt=""></div> <div class="msg-header"><p>'+ result + '</p></div></div>';
             $(".form").append($replay);
             // when chat goes down the scroll bar automatically comes to the bottom
             $(".form").scrollTop($(".form")[0].scrollHeight);
