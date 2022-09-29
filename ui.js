@@ -22,3 +22,7 @@ inputKey.addEventListener('keydown', e => {
         senBtn.click();
     }
 })
+
+function alertBox(string) {
+    alert(string);
+}
