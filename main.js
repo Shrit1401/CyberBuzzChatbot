@@ -3,11 +3,8 @@ $(document).ready(function () {
         buttonClicked();
     });
 
-    $("#data").addEventListener("keypress", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault();
-            $(".btn").click();
-        }
+    $("#data").addEventListener("keypress", function () {
+        $(".btn").click();
     });
 });
 
@@ -30,5 +27,3 @@ function buttonClicked() {
         }
     });
 }
-
-

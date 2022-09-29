@@ -10,3 +10,15 @@ kebab.addEventListener('click', function () {
     cross.classList.toggle('active');
     dropdown.classList.toggle('active');
 })
+
+//enter key
+var inputKey = document.querySelector("input");
+
+var senBtn = document.querySelector(".btn");
+
+
+inputKey.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        senBtn.click();
+    }
+})
